@@ -15,5 +15,41 @@
     </style>
   </head>
 
-  <body></body>
+  <body>
+   <form>
+    <label for="email_input">email</label>
+    <input type="email" name="email_input">
+
+    <label for="password_input">Password</label>
+    <input type="password">
+
+    <label for="Fullname_input">Name and Lastname</label>
+    <input type="text" name="Fullname_input">
+
+    <label for="Date_input">Insert date of birth</label>
+    <input type="date" name="Date_input">
+
+    <label for="Phonenumber_input">Telephone number</label>
+    <input type="number" pattern="0-9" name="Phonenumber_input" maxlength="10">
+
+    
+    <label for="plan">Choose a plan</label>
+     <select name="plan"> Choose a plan:
+      <option value="free plan">Free plan</option>
+      <option value="3 plan+price">3 Plans with incresing price</option>
+      <input type="checkbox">Pro plan</input>
+     </select>
+
+    <label for="creditcard_input">Credit card number</label>
+    <input type="text" name="creditcard_input" maxlength="16" >
+    
+    <label for="cvc_input">CVC</label>
+    <input type="text" maxlength="3" name="cvc_input">
+
+    <label for="expirationDate_input">Expiration date:</label>
+    <input type="text" name="expirationDate_input">
+
+    <label for="Billingadress_input">Blling adress</label>
+    <input type="text" name="Billingadress_input">
+  </body>
 </html>
