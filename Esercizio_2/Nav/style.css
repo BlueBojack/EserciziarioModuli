@@ -1,0 +1,53 @@
+:root {
+--gray: #808080
+}
+
+nav {
+   
+    height: 40px;
+    background-color: #28242c;
+    color: white;
+    justify-content: space-between;
+}
+.nav-wrapper{
+  
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height:100% ;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+hr {
+color: cyan;
+}
+.search {
+
+    background-color: #28242c;
+    border-color: green;
+}
+
+.search:hover {
+    background-color: green;
+    color: white;
+}
+.disabled {
+
+
+    
+}
+ 
+.pixel-line {
+    height: 5px;
+    background-color: cyan;
+}
+
+.link, .dropdown, .disabled {
+    color: #808080;
+}
+

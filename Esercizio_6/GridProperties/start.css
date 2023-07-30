@@ -1,0 +1,56 @@
+body {
+    width: 60em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "verde verde verde "
+    "giallo rosso  blu"
+    "giallo rosso blu"
+    "arancione arancione blu"
+    ;
+  }
+  
+  section {
+    padding: 2em;
+    margin: 1em;
+  }
+  
+  #green {
+    background-color: #8ffda7;
+    grid-area: verde     ;
+  }
+  
+  #orange {
+    background-color: #ffc788;
+    grid-area: arancione;
+  }
+  
+  #yellow {
+    background-color: #ffff92;
+    grid-area: giallo;
+  }
+  
+  #red {
+    background-color: #ff919c;
+    grid-area: rosso;
+    
+  }
+  
+  #blue {
+    background-color: #98d2ff;
+    grid-area: blu;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    background-color: white;
+    padding: 1em;
+    display: block;
+    margin: 1em;
+  }
+  

@@ -1,0 +1,42 @@
+.wrap {
+    width: 60em;
+ display: grid;
+ grid-template-columns:repeat(4,1fr) ;
+ grid-template-rows: repeat(6,1fr) ;
+ grid-template-areas: 
+ ". . . ."
+ "operazioni operazioni operazioni operazioni"
+ "left center right ."
+ "left center right ."
+ "left center right ."
+ "left center right .";
+}
+
+#operazioni{
+grid-area: operazioni;
+}
+
+#left-column{
+    grid-area: left;
+
+}
+
+#right-column{
+    grid-area: right;
+
+}
+
+#center-column{
+    grid-area: center;
+
+}
+section {
+    padding: 2em;
+    margin: 1em;
+  }
+li {
+    background-color: white;
+    padding: 1em;
+    display: block;
+    margin: 1em;
+  }

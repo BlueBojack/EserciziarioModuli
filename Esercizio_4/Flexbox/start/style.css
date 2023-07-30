@@ -1,0 +1,49 @@
+*{
+
+    padding:0px;
+    margin: 0px;
+}
+
+ body{
+    height: 700px;
+ }
+nav{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 200px;
+    gap: 50px;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+     font-size: xx-large;
+    width:100% ;
+    height:200px ;
+}
+
+
+
+a {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2b2bb2;
+    transition-delay: 0.2s;
+}
+.duck-logo{
+    width: inherit;
+    height: inherit;
+}
+.avatar{
+
+ width: 50px;
+ height: 50px;
+}
+ .username {
+    flex: 1 ;
+ }
