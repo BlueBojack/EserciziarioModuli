@@ -17,3 +17,5 @@ const divide = function (a, b) {
 const log = function (value) {
   console.log(value);
 }
+
+// Non sono riuscito a capire cosa fare

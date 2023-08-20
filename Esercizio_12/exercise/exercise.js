@@ -18,3 +18,5 @@ const persons = [
 const nicknames = nicknameMap(persons);
 console.log(persons);
 console.log(nicknames);
+
+// Non sono riuscito a capire come farlo

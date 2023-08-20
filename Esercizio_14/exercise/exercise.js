@@ -53,3 +53,5 @@ const notes = [
 ];
 
 uncompletedNotes(notes);
+
+//Non sono riuscito a capire come farlo
