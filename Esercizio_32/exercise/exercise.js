@@ -22,4 +22,4 @@ Non sono riuscito a trovare un metodo adatto
 
 const json = JSON.stringify(person);
 
-console.log(json); // Should return: { id: 1, age: 25 }
+console.log(json); // Should return: { id: 1, age: 25 } a
