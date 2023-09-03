@@ -15,3 +15,5 @@ person2.address.city = 'Milan';
 
 console.log(person1);
 console.log(person2);
+
+//Non sono riuscito a capire cosa dovessi fare per risolvere questo problema
