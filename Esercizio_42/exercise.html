@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <div id="container" style="display: flex; align-items: center"></div>
+  </body>
+</html>
+
+<script>
+  const fetchData = async () => {
+    try {
+      const API_URL = "https://jsonplaceholder.typicode.com/todos/4";
+      const response = await fetch(API_URL);
+      const data = await response.json();
+      elementGenerator(data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const elementGenerator = (data) => {
+    const container = document.querySelector("#container");
+
+    const h2 = document.createElement("h2"); // creiamo <h2>
+    h2.innerHTML = data.title; // assegniamo ad <h2> il contenuto di title (obj di todos)
+    container.appendChild(h2); // al container "appendiamo" <h2>
+
+    const checkBoxInput = document.createElement("input"); // creiamo un <input>
+    checkBoxInput.type = "checkbox"; // assegniamo il <type> di <input> (checkbox)
+    checkBoxInput.checked = data.completed; // assegniamo "true" o "false" al checkbox (dipende da cosa contiene il todo)
+    container.appendChild(checkBoxInput); // al container voglio "appendere" il (checkboxInput)
+  };
+
+  fetchData();
+</script>

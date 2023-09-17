@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <div id="container" style="display: flex; align-items: center"></div>
+
+    <script>
+      const fetchData = async () => {
+        try {
+          const API_URL = "https://jsonplaceholder.typicode.com/todos";
+          const response = await fetch(API_URL);
+          const data = await response.json();
+          elementsGenerator(data); // qui avvio il generatore
+        } catch (error) {
+          console.error(error);
+        }
+      };
+
+      // questo è un generatore di elementi (da "JSON obj" a "li" in HTML)
+      const elementsGenerator = (data) => {
+        const ul = document.createElement("ul"); // qui creiamo "ul"
+        ul.classList.add("todo-list"); // qui assegniamo una classe ad "ul"
+
+        // qui "peschiamo" il div "container" dell'html e ci aggingiamo all'interno "ul"
+        document.querySelector("#container").appendChild(ul);
+
+        // per ogni "obj" presente nel file JSON ->
+        data.forEach((jsonObj) => {
+          // ci creiamo un "li"!
+          const li = document.createElement("li");
+          li.innerText = jsonObj.title; // qui inseriamo fra gli "li" i "title" degli obj JSON
+          document.querySelector(".todo-list").appendChild(li); // qui inseriamo gli "li" negli "ul"
+        });
+      };
+
+      fetchData(); // richiamo il FETCH
+    </script>
+  </body>
+</html>
