@@ -21,4 +21,10 @@
 
 <script>
   // code here
+  const inputValue = document.querySelectorAll("input")
+  const labelText  = document.querySelectorAll("label")
+  
+  labelText.forEach((label, index) => {
+    console.log(`${label.innerHTML} ${inputValue[index].value}`)
+  })
 </script>
